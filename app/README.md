@@ -6,6 +6,9 @@
 ### Install node modules
 `yarn`
 
+### Composer Install
+`cd craft && composer install`
+
 ### node
 If you get the yarn error "bootstrap@4.1.1: The engine "node" is incompatible with this module. Expected version ">=6"." and are running `nvm` - run `nvm install node`
 
