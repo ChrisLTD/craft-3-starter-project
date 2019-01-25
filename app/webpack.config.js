@@ -119,8 +119,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           emitFile: false, // processes files without copying them into the dist folder
-          // regExp: /\/web\/(.*)$/, // remove the /web/ part
-          name: '../[1]', // [1] is the first group from regExp
+          name: '../[path][name].[ext]',
         }
       }
     ]
