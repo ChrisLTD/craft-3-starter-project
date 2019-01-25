@@ -1,8 +1,9 @@
 # docker-compose-lamp
 A simple set of dockers for running a local LAMP
-- Apache 2.4
-- PHP 7.0
-- MariaDB 10.1
+- Apache
+- PHP 7
+- MariaDB
+- phpMyAdmin
 
 ## General Usage Information
 
@@ -15,7 +16,11 @@ By default this mounts the `/var/www/html` directory to `./app` on your host OS.
 
 ### Accessing the web server
 
-Navigate to [http://localhost:8888](http://localhost:8888)
+Navigate to [http://localhost:8080](http://localhost:8080)
+
+### Accessing phpMyAdmin
+
+Navigate to [http://localhost:8081](http://localhost:8081)
 
 ### Accessing the database from your host
 
@@ -24,7 +29,7 @@ Use a tool like [Sequel Pro](https://sequelpro.com) to connect to:
 host: 127.0.0.1
 username: root
 password: root
-port: 8081
+port: 8082
 ```
 
 ### Accessing the database from the web server container
