@@ -1,0 +1,38 @@
+.header {
+  background: $red;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+
+  a {
+    color: white;
+  }
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+}
+
+.logo {
+  @include link-hover(white, white);
+  font-weight: $semibold;
+  font-size: 1.25rem;
+
+  span {
+    margin-left: .5rem;
+    vertical-align: 2px;
+  }
+}
+
+.header__right {
+  margin-top: .5rem;
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+    margin-top: 2px;
+  }
+
+  a.active {
+    text-decoration: underline;
+  }
+}

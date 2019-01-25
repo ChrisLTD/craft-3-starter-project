@@ -25,6 +25,10 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+
+        'environmentVariables' => array(
+          'staticAssetsVersion' => '3', // https://nystudio107.com/blog/simple-static-asset-versioning
+        ),
     ],
 
     // Dev environment settings
@@ -34,6 +38,10 @@ return [
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
+
+        'environmentVariables' => array(
+          'staticAssetsVersion' => time(), // always bust
+        ),
     ],
 
     // Staging environment settings

@@ -1,0 +1,17 @@
+// Bootstrap overrides
+
+$red:           #B93143;
+$gray-dark:      #4A4E57;
+
+$body-bg:       #D8D8D8;
+$body-color:    #33363C;
+
+$link-color:            $red;
+$link-hover-color:      $link-color;
+
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-display: "Open Sans Condensed", 'Arial Black', 'Impact', $font-family-sans-serif;
+
+$semibold: 600;
+
+$transition-default: all .1s ease-in-out;

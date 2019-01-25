@@ -1,0 +1,54 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: $transition-default;
+}
+
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+.content {
+  background: #F7F7F7;
+  padding: 2.5rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 4rem 0;
+  }
+}
+
+.section {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+}
+
+.section-title {
+  font-family: $font-family-display;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+  line-height: 1.2;
+}
+
+.sidebar-section + .sidebar-section {
+  margin-top: 3rem;
+}
+
+.sidebar-title {
+  font-size: 1.125rem;
+  font-weight: $semibold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.sidebar-cta {
+  @extend %button-gray;
+  margin-top: 1rem;
+}

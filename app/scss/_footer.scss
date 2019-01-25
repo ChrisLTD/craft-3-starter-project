@@ -1,0 +1,15 @@
+.footer {
+  background: #D8D8D8;
+  color: black;
+  font-size: .825rem;
+  padding: .5rem 0;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: right;
+  }
+
+  a {
+    @include link-hover(black, $red);
+  }
+}
