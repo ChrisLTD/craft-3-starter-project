@@ -1,0 +1,4 @@
+/.env
+/.idea
+/craft/vendor
+.DS_Store
