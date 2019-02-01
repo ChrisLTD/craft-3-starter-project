@@ -6,7 +6,9 @@
 <head>
   <meta charset="utf-8">
   <title>{% if entry.title is defined %}{{ entry.title }} | {% elseif title is defined %}{{ title }} | {% endif %}{{ siteName }}</title>
-
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" href="{{ siteUrl }}img/favicon-150x150.jpg">
 
   <link rel="stylesheet" href="{{ siteUrl }}dist/app.css?v={{ craft.config.environmentVariables.staticAssetsVersion }}">
